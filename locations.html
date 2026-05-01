@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations | Expert Utility Management Ltd</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .page-hero {
+            padding: 150px 0 80px;
+            background: var(--primary);
+            text-align: center;
+        }
+
+        .location-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .location-card {
+            background: var(--primary-light);
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: var(--transition);
+        }
+
+        .location-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(100, 255, 218, 0.1);
+        }
+
+        .location-img {
+            height: 180px;
+            background-color: var(--secondary);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .location-body {
+            padding: 2rem;
+            text-align: center;
+            flex: 1;
+        }
+
+        .location-body h3 {
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <section class="page-hero">
+        <div class="container fade-in">
+            <h1>Our Global Reach</h1>
+            <p>Rapid IT engineer deployment across key international tech hubs.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="location-grid fade-in">
+                <!-- UK -->
+                <div class="location-card" id="uk">
+                    <div class="location-img" style="background-image: url('https://images.unsplash.com/photo-1513635269975-5969336cd100?auto=format&fit=crop&w=600&q=80')"></div>
+                    <div class="location-body">
+                        <h3>United Kingdom</h3>
+                        <p>Providing IT Engineers across London, Manchester, Birmingham, and broader UK regions for on-site support and data center operations.</p>
+                    </div>
+                </div>
+
+                <!-- USA -->
+                <div class="location-card" id="usa">
+                    <div class="location-img" style="background-image: url('https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=600&q=80')"></div>
+                    <div class="location-body">
+                        <h3>United States</h3>
+                        <p>Coast-to-coast coverage for short and long-term project resourcing from New York to Silicon Valley.</p>
+                    </div>
+                </div>
+
+                <!-- France -->
+                <div class="location-card" id="france">
+                    <div class="location-img" style="background-image: url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=600&q=80')"></div>
+                    <div class="location-body">
+                        <h3>France</h3>
+                        <p>Equipping businesses in Paris, Lyon, and beyond with fluent, experienced IT support and network specialists.</p>
+                    </div>
+                </div>
+
+                <!-- Austria -->
+                <div class="location-card" id="austria">
+                    <div class="location-img" style="background-image: url('https://images.unsplash.com/photo-1516550893923-42d28e5677af?auto=format&fit=crop&w=600&q=80')"></div>
+                    <div class="location-body">
+                        <h3>Austria</h3>
+                        <p>Reliable hardware, deskside, and software deployment teams serving Vienna and broader Austrian enterprises.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="hire.html" class="btn btn-primary fade-in">Find Engineers In Your Area</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

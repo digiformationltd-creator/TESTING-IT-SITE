@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Expert Utility Management Ltd</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .page-hero {
+            padding: 120px 0 60px;
+            background: var(--bg);
+            text-align: center;
+            border-bottom: 1px solid var(--primary-light);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-info-card {
+            background: var(--primary-light);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .contact-info-card i {
+            font-size: 2.5rem;
+            color: var(--accent);
+        }
+
+        .contact-info-card h4 {
+            margin-bottom: 0.2rem;
+        }
+
+        .contact-form {
+            background: var(--primary-light);
+            padding: 3rem;
+            border-radius: 8px;
+            border-top: 4px solid var(--accent);
+        }
+
+        @media (max-width: 900px) {
+            .contact-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <section class="page-hero">
+        <div class="container fade-in">
+            <h1>Contact Us</h1>
+            <p>We're here to help. Reach out through any of the channels below.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container fade-in">
+            <div class="contact-grid">
+                
+                <!-- Contact Info Left Side -->
+                <div>
+                    <h2 style="margin-bottom: 2rem;">Get in Touch</h2>
+                    
+                    <a href="mailto:info@expertutility.com" style="display:block; text-decoration: none; color: inherit;">
+                        <div class="contact-info-card">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p style="margin: 0; color: var(--accent);">info@expertutility.com</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://wa.me/1234567890" target="_blank" style="display:block; text-decoration: none; color: inherit;">
+                        <div class="contact-info-card" style="border-left: 4px solid var(--whatsapp);">
+                            <i class="fab fa-whatsapp" style="color: var(--whatsapp);"></i>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p style="margin: 0; color: var(--whatsapp);">+44 (0) 123 456 7890</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="contact-info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Head Office</h4>
+                            <p style="margin: 0;">123 Tech Avenue, London, UK, EC1A 1BB</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Right Side -->
+                <div>
+                    <div class="contact-form">
+                        <h3 style="margin-bottom: 1.5rem;">Send a Message</h3>
+                        <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Message Sent!');">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" class="form-control" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

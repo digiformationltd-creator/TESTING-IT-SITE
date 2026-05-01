@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire an Engineer | Expert Utility Management Ltd</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .page-hero {
+            padding: 120px 0 60px;
+            background: var(--primary);
+            text-align: center;
+        }
+
+        .hire-form {
+            background: var(--primary-light);
+            padding: 3rem;
+            border-radius: 8px;
+            max-width: 700px;
+            margin: -40px auto 4rem;
+            position: relative;
+            z-index: 10;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            border-top: 4px solid var(--accent);
+        }
+
+        .grid-forms {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 600px) {
+            .grid-forms { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <section class="page-hero">
+        <div class="container fade-in">
+            <h1>Hire an Engineer</h1>
+            <p>Tell us what you need. We'll deploy the right talent.</p>
+        </div>
+    </section>
+
+    <section style="background: var(--bg); padding-bottom: 50px;">
+        <div class="container">
+            <div class="hire-form fade-in">
+                <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Requirement Submitted successfully! Our team will contact you shortly.');">
+                    <div class="form-group">
+                        <label for="companyName">Company Name</label>
+                        <input type="text" id="companyName" class="form-control" placeholder="Acme Corp" required>
+                    </div>
+                    
+                    <div class="grid-forms">
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <input type="text" id="location" class="form-control" placeholder="City, Country" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="duration">Duration</label>
+                            <select id="duration" class="form-control" required>
+                                <option value="" disabled selected>Select duration...</option>
+                                <option value="short">Short-term (1-4 weeks)</option>
+                                <option value="long">Long-term (1+ months)</option>
+                                <option value="contract">Project Contract</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid-forms">
+                        <div class="form-group">
+                            <label for="numEngineers">Number of Engineers</label>
+                            <input type="number" id="numEngineers" class="form-control" min="1" placeholder="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="requiredSkills">Required Skills</label>
+                            <input type="text" id="requiredSkills" class="form-control" placeholder="e.g. Cisco CCNA, Windows Server" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="margin-top: 1rem;">
+                        <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.1rem; padding: 1rem;">Submit Requirement</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

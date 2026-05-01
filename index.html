@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert Utility Management Ltd | IT Staffing</title>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Custom Page CSS -->
+    <style>
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(2, 12, 27, 0.9)), url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=80') center/cover;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin-bottom: 2rem;
+            color: var(--text-main);
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .intro {
+            background-color: var(--primary-light);
+            text-align: center;
+        }
+
+        .intro-text {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            color: var(--text-main);
+        }
+
+        .intro-text strong {
+            color: var(--white);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            text-align: center;
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+        }
+
+        .how-it-works {
+            background-color: var(--primary-light);
+        }
+
+        .steps-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 3rem;
+        }
+
+        .step-box {
+            background: var(--primary);
+            padding: 3rem;
+            border-radius: 8px;
+            border: 1px solid var(--secondary);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .step-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--accent);
+        }
+
+        .locations-flex {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .location-badge {
+            background: rgba(100, 255, 218, 0.1);
+            color: var(--accent);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 600;
+            border: 1px solid var(--accent);
+            transition: var(--transition);
+        }
+
+        .location-badge:hover {
+            background: var(--accent);
+            color: var(--primary);
+        }
+
+        .contact-section {
+            background: linear-gradient(var(--bg), var(--primary-light));
+        }
+
+        .contact-form-wrapper {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--primary);
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 1px solid rgba(100, 255, 218, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .steps-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .hero-btns {
+                flex-direction: column;
+                width: 100%;
+            }
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Injection Point -->
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content fade-in">
+            <h1>IT Engineers for On-Site & Remote Projects</h1>
+            <p>We provide experienced IT engineers to support businesses across the UK, USA, and Europe. Reliable, timely, and professional solutions.</p>
+            <div class="hero-btns">
+                <a href="hire.html" class="btn btn-primary">Hire an Engineer</a>
+                <a href="join.html" class="btn btn-outline">Join as Engineer</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="section intro">
+        <div class="container fade-in">
+            <p class="intro-text">
+                We support businesses by providing <strong>IT engineers for short-term and long-term requirements.</strong> <br><br>
+                We also help engineers connect with strictly vetted <strong>project-based and contract opportunities.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="section">
+        <div class="container">
+            <h2 class="fade-in">Our Core Support Areas</h2>
+            <div class="services-grid">
+                <div class="card service-card fade-in">
+                    <i class="fas fa-headset service-icon"></i>
+                    <h3>IT Support</h3>
+                    <p>Comprehensive system troubleshooting, maintenance, and technical assistance.</p>
+                </div>
+                <div class="card service-card fade-in">
+                    <i class="fas fa-network-wired service-icon"></i>
+                    <h3>Network Support</h3>
+                    <p>Infrastructure setup, active monitoring, and resolving connectivity issues.</p>
+                </div>
+                <div class="card service-card fade-in">
+                    <i class="fas fa-desktop service-icon"></i>
+                    <h3>Deskside Support</h3>
+                    <p>Direct on-site engineering support for hardware and software resolutions.</p>
+                </div>
+                <div class="card service-card fade-in">
+                    <i class="fas fa-server service-icon"></i>
+                    <h3>Data Center Support</h3>
+                    <p>Smart Hands and remote hands services for critical data center operations.</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="services.html" class="btn btn-outline fade-in">View Detailed Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section how-it-works">
+        <div class="container">
+            <h2 class="fade-in">How It Works</h2>
+            <div class="steps-container">
+                <div class="step-box fade-in">
+                    <h3 style="color: var(--accent);"><i class="fas fa-building"></i> For Businesses</h3>
+                    <p style="margin-top: 1rem;">
+                        <strong>1. Submit your requirement:</strong> Details on location, skills, and duration.<br><br>
+                        <strong>2. Matchmaking:</strong> We match you with highly suitable, vetted IT engineers.<br><br>
+                        <strong>3. Deployment:</strong> The engineer arrives on-site or connects remotely to execute the project.
+                    </p>
+                    <a href="hire.html" class="btn btn-primary" style="margin-top: 1rem;">Hire Now</a>
+                </div>
+                <div class="step-box fade-in">
+                    <h3 style="color: var(--white);"><i class="fas fa-laptop-code"></i> For Engineers</h3>
+                    <p style="margin-top: 1rem;">
+                        <strong>1. Apply:</strong> Submit your CV and specify your expertise and location.<br><br>
+                        <strong>2. Verification:</strong> We review your skills and clear you for our network.<br><br>
+                        <strong>3. Get Connected:</strong> Receive alerts and get connected with relevant project opportunities.
+                    </p>
+                    <a href="join.html" class="btn btn-outline" style="margin-top: 1rem;">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section class="section">
+        <div class="container text-center" style="text-align: center;">
+            <h2 class="fade-in" style="margin-bottom: 1rem;">Regions We Cover</h2>
+            <p class="fade-in">Providing rapid-response IT professionals in key global locations.</p>
+            <div class="locations-flex fade-in">
+                <a href="locations.html#uk" class="location-badge"><i class="fas fa-map-marker-alt"></i> United Kingdom</a>
+                <a href="locations.html#usa" class="location-badge"><i class="fas fa-map-marker-alt"></i> United States</a>
+                <a href="locations.html#france" class="location-badge"><i class="fas fa-map-marker-alt"></i> France</a>
+                <a href="locations.html#austria" class="location-badge"><i class="fas fa-map-marker-alt"></i> Austria</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact Section -->
+    <section class="section contact-section">
+        <div class="container">
+            <div class="contact-form-wrapper fade-in">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <h2>Quick Contact</h2>
+                    <p>Have a requirement? Let us know.</p>
+                </div>
+                <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Form submitted! We will contact you soon.');">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Your Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" class="form-control" placeholder="Your Company Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="requirement">Requirement</label>
+                        <textarea id="requirement" class="form-control" rows="4" placeholder="Briefly describe your support needs..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Injection Point -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Inject JS Components -->
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

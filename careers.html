@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | Expert Utility Management Ltd</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .page-hero {
+            padding: 150px 0 80px;
+            background: linear-gradient(rgba(10, 25, 47, 0.9), rgba(2, 12, 27, 0.9)), url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1920&q=80') center/cover;
+            text-align: center;
+        }
+
+        .job-card {
+            background: var(--primary-light);
+            border-left: 4px solid var(--accent);
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition);
+        }
+
+        .job-card:hover {
+            background: rgba(100, 255, 218, 0.05);
+            transform: translateX(10px);
+        }
+
+        .job-details h3 {
+            color: var(--white);
+            margin-bottom: 0.5rem;
+        }
+
+        .job-meta {
+            display: flex;
+            gap: 1.5rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        
+        .job-meta span i {
+            color: var(--accent);
+            margin-right: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .job-card {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <section class="page-hero">
+        <div class="container fade-in">
+            <h1>Expert Utility Careers</h1>
+            <p>Internal corporate roles, contract, and freelance opportunities.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="fade-in" style="margin-bottom: 2rem;">Internal Roles</h2>
+            <div class="fade-in">
+                <div class="job-card">
+                    <div class="job-details">
+                        <h3>IT Talent Acquisition Specialist</h3>
+                        <div class="job-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> London, UK (Hybrid)</span>
+                            <span><i class="fas fa-briefcase"></i> Full-time</span>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary">Apply Now</a>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-details">
+                        <h3>Client Relations Manager</h3>
+                        <div class="job-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> New York, US (Remote)</span>
+                            <span><i class="fas fa-briefcase"></i> Full-time</span>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary">Apply Now</a>
+                </div>
+            </div>
+
+            <h2 class="fade-in" style="margin-top: 4rem; margin-bottom: 2rem;">Project & Contract Roles</h2>
+            <p class="fade-in" style="margin-bottom: 2rem;">We are continuously accepting applications for our engineering network. Submit your profile to get matched with active client needs.</p>
+            <div class="fade-in">
+                <div class="job-card" style="border-left-color: var(--white);">
+                    <div class="job-details">
+                        <h3 style="color: var(--white);">Data Center Smart Hands Engineer</h3>
+                        <div class="job-meta">
+                            <span><i class="fas fa-map-marker-alt" style="color: var(--white);"></i> Paris, France</span>
+                            <span><i class="fas fa-file-contract" style="color: var(--white);"></i> Contract (6 Months)</span>
+                        </div>
+                    </div>
+                    <a href="join.html" class="btn btn-outline" style="border-color: var(--white); color: var(--white);">Join Network</a>
+                </div>
+
+                <div class="job-card" style="border-left-color: var(--white);">
+                    <div class="job-details">
+                        <h3 style="color: var(--white);">L2 Network Engineer</h3>
+                        <div class="job-meta">
+                            <span><i class="fas fa-map-marker-alt" style="color: var(--white);"></i> Vienna, Austria</span>
+                            <span><i class="fas fa-file-contract" style="color: var(--white);"></i> Contract (3 Months)</span>
+                        </div>
+                    </div>
+                    <a href="join.html" class="btn btn-outline" style="border-color: var(--white); color: var(--white);">Join Network</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join as Engineer | Expert Utility Management Ltd</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .page-hero {
+            padding: 120px 0 60px;
+            background: linear-gradient(135deg, var(--primary) 0%, #152c50 100%);
+            text-align: center;
+        }
+
+        .join-form {
+            background: var(--primary-light);
+            padding: 3rem;
+            border-radius: 8px;
+            max-width: 700px;
+            margin: -40px auto 4rem;
+            position: relative;
+            z-index: 10;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            border-top: 4px solid var(--white);
+        }
+
+        .file-upload {
+            padding: 2rem;
+            border: 2px dashed var(--secondary);
+            text-align: center;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .file-upload:hover {
+            border-color: var(--accent);
+            background: rgba(100, 255, 218, 0.05);
+        }
+
+        .file-upload i {
+            font-size: 2rem;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <section class="page-hero">
+        <div class="container fade-in">
+            <h1>Join Our Network</h1>
+            <p>Apply to connect with premium IT project opportunities worldwide.</p>
+        </div>
+    </section>
+
+    <section style="background: var(--bg); padding-bottom: 50px;">
+        <div class="container">
+            <div class="join-form fade-in">
+                <form action="#" method="POST" enctype="multipart/form-data" onsubmit="event.preventDefault(); alert('Application Submitted! We will review your CV.');">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" class="form-control" placeholder="John Doe" required>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label for="location">Location</label>
+                            <input type="text" id="location" class="form-control" placeholder="City, Country" required>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label for="experience">Experience (Years)</label>
+                            <input type="number" id="experience" class="form-control" min="0" placeholder="e.g. 5" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="skills">Primary Skills & Certifications</label>
+                        <textarea id="skills" class="form-control" rows="3" placeholder="e.g. CompTIA A+, CCNP, Break/Fix, Deployment" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Upload CV (PDF, DOCX)</label>
+                        <div class="file-upload" onclick="document.getElementById('cvUpload').click()">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p id="fileName">Click to browse or drag and drop</p>
+                            <input type="file" id="cvUpload" accept=".pdf,.doc,.docx" onchange="document.getElementById('fileName').innerText = this.files[0].name">
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="margin-top: 2rem;">
+                        <button type="submit" class="btn btn-outline" style="width: 100%; font-size: 1.1rem; padding: 1rem; color: var(--white); border-color: var(--white);">Apply Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

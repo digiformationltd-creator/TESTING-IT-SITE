@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Expert Utility Management Ltd</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .page-hero {
+            padding: 150px 0 80px;
+            background: linear-gradient(rgba(10, 25, 47, 0.95), rgba(2, 12, 27, 0.9)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=80') center/cover;
+            text-align: center;
+        }
+
+        .services-detail-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-type-box {
+            background: rgba(100, 255, 218, 0.05);
+            border: 1px solid rgba(100, 255, 218, 0.2);
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .service-type-box i {
+            font-size: 2.5rem;
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <section class="page-hero">
+        <div class="container fade-in">
+            <h1>Our Services</h1>
+            <p>Comprehensive IT Staffing & Deployment Solutions</p>
+        </div>
+    </section>
+
+    <!-- IT Staffing Services Overview -->
+    <section class="section" style="background: var(--primary-light);">
+        <div class="container text-center" style="text-align: center;">
+            <h2 class="fade-in">IT Staffing Services</h2>
+            <div class="services-detail-grid fade-in">
+                <div class="service-type-box">
+                    <i class="fas fa-users-cog"></i>
+                    <h3>On-site IT Engineers</h3>
+                    <p>Physical deployment of technical talent directly to your offices or data centers.</p>
+                </div>
+                <div class="service-type-box">
+                    <i class="fas fa-laptop-house"></i>
+                    <h3>Remote IT Support</h3>
+                    <p>Dedicated off-site professionals handling helpdesk, network ops, and software dev.</p>
+                </div>
+                <div class="service-type-box">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>Project-based Engineers</h3>
+                    <p>Agile engineering teams deployed specifically to complete finite infrastructure projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Support Areas -->
+    <section class="section">
+        <div class="container">
+            <h2 class="fade-in" style="text-align: center; display: block; margin-bottom: 3rem;">Support Areas</h2>
+            
+            <div class="services-detail-grid">
+                <div class="card fade-in" id="support">
+                    <h3 style="color: var(--accent);"><i class="fas fa-headset"></i> IT Support</h3>
+                    <p>First and second line support to resolve ticketing queue bottlenecks. Hardware rollouts, software provisioning, and end-user assistance.</p>
+                </div>
+                <div class="card fade-in" id="network">
+                    <h3 style="color: var(--accent);"><i class="fas fa-network-wired"></i> Network Support</h3>
+                    <p>Installation and configuration of switches, routers, and firewalls. Advanced diagnostic troubleshooting and network security monitoring.</p>
+                </div>
+                <div class="card fade-in" id="deskside">
+                    <h3 style="color: var(--accent);"><i class="fas fa-desktop"></i> Deskside Support</h3>
+                    <p>In-person resolution of complex hardware/software issues. IMAC (Installs, Moves, Adds, Changes) execution and VIP executive support.</p>
+                </div>
+                <div class="card fade-in" id="datacenter">
+                    <h3 style="color: var(--accent);"><i class="fas fa-server"></i> Data Center Support</h3>
+                    <p>Racking and stacking servers, structured cabling (copper and fiber), and remote hands assistance for off-site administrators.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hiring Types -->
+    <section class="section" style="background: var(--bg); border-top: 1px solid var(--secondary);">
+        <div class="container" style="text-align: center;">
+            <h2 class="fade-in">Hiring Types</h2>
+            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 3rem; margin-bottom: 3rem;">
+                <div class="card fade-in" style="width: 250px; border-bottom: 3px solid var(--accent);">
+                    <h3>Short-term</h3>
+                    <p>Perfect for gap coverage, holiday fill-ins, and emergency out-of-hours needs.</p>
+                </div>
+                <div class="card fade-in" style="width: 250px; border-bottom: 3px solid var(--whatsapp);">
+                    <h3>Long-term</h3>
+                    <p>Embedded engineers working consistently within your operational matrix.</p>
+                </div>
+                <div class="card fade-in" style="width: 250px; border-bottom: 3px solid var(--white);">
+                    <h3>Contract-based</h3>
+                    <p>Fixed-term milestones to ensure successful implementation of discrete systems.</p>
+                </div>
+            </div>
+            <a href="hire.html" class="btn btn-primary fade-in">Hire For Your Need</a>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
