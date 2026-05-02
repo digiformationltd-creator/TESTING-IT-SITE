@@ -1,100 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hire an Engineer | Expert Utility Management Ltd</title>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <style>
-        .page-hero {
-            padding: 120px 0 60px;
-            background: var(--primary);
-            text-align: center;
-        }
-
-        .hire-form {
-            background: var(--primary-light);
-            padding: 3rem;
-            border-radius: 8px;
-            max-width: 700px;
-            margin: -40px auto 4rem;
-            position: relative;
-            z-index: 10;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-            border-top: 4px solid var(--accent);
-        }
-
-        .grid-forms {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1.5rem;
-        }
-
-        @media (max-width: 600px) {
-            .grid-forms { grid-template-columns: 1fr; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hire an Engineer | Experts Support Service Ltd</title>
+  <meta name="description" content="Submit your IT staffing requirement to Experts Support Service Ltd. We'll match and deploy vetted engineers within 24–48 hours.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .hire-layout { display:grid; grid-template-columns:1fr 1.3fr; gap:4rem; align-items:start; }
+    .hire-form-box { background:var(--card-bg); padding:3rem; border-radius:8px; border:1px solid var(--border-glow); border-top:3px solid var(--accent); }
+    .process-step { display:flex; gap:1rem; padding:1.5rem 0; border-bottom:1px solid var(--border-glow); }
+    .process-step:last-child { border-bottom:none; }
+    .step-circle { width:40px; height:40px; border-radius:50%; background:rgba(0,240,255,0.1); border:1px solid var(--accent); display:flex; align-items:center; justify-content:center; color:var(--accent); font-family:var(--font-mono); font-size:0.8rem; flex-shrink:0; }
+    .grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:1.2rem; }
+    @media(max-width:900px){ .hire-layout { grid-template-columns:1fr; } .grid-2 { grid-template-columns:1fr; } }
+  </style>
 </head>
 <body>
+  <div id="header-placeholder"></div>
 
-    <div id="header-placeholder"></div>
+  <section class="page-hero">
+    <div class="container fade-in">
+      <span class="section-tag">// For Businesses</span>
+      <h1>Hire an <span class="gradient-text">IT Engineer</span></h1>
+      <p style="max-width:550px;margin:1rem auto 0;">Tell us your requirement and we'll deploy a verified engineer within 24–48 hours.</p>
+    </div>
+  </section>
 
-    <section class="page-hero">
-        <div class="container fade-in">
-            <h1>Hire an Engineer</h1>
-            <p>Tell us what you need. We'll deploy the right talent.</p>
+  <section class="section">
+    <div class="container">
+      <div class="hire-layout fade-in">
+        <!-- Process Sidebar -->
+        <div>
+          <span class="section-tag">// How It Works</span>
+          <h2 style="font-size:1.6rem; margin-bottom:2rem;">From Brief to <span class="gradient-text">Deployment</span></h2>
+          <div class="process-step">
+            <div class="step-circle">01</div>
+            <div><h4>Submit Your Requirement</h4><p style="font-size:0.9rem; margin:0;">Fill in the form with your location, required skills, number of engineers, and duration.</p></div>
+          </div>
+          <div class="process-step">
+            <div class="step-circle">02</div>
+            <div><h4>We Review & Match</h4><p style="font-size:0.9rem; margin:0;">Our team immediately searches our active talent pool and identifies verified candidates.</p></div>
+          </div>
+          <div class="process-step">
+            <div class="step-circle">03</div>
+            <div><h4>Candidate Profiles Sent</h4><p style="font-size:0.9rem; margin:0;">We send you engineer CV profiles and technical summaries for your review within 24–48 hours.</p></div>
+          </div>
+          <div class="process-step">
+            <div class="step-circle">04</div>
+            <div><h4>Engineer Deployed</h4><p style="font-size:0.9rem; margin:0;">Once confirmed, the engineer starts on the agreed date — on-site or remotely.</p></div>
+          </div>
+          <div style="margin-top:2.5rem; padding:1.5rem; background:rgba(0,240,255,0.05); border:1px solid var(--border-glow); border-radius:8px;">
+            <h4 style="color:var(--accent); font-family:var(--font-mono); margin-bottom:0.75rem;">// Need Urgent Help?</h4>
+            <p style="font-size:0.9rem; margin-bottom:1rem;">For same-day requirements, contact us via WhatsApp for the fastest response.</p>
+            <a href="https://wa.me/447700900000" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Now</a>
+          </div>
         </div>
-    </section>
 
-    <section style="background: var(--bg); padding-bottom: 50px;">
-        <div class="container">
-            <div class="hire-form fade-in">
-                <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Requirement Submitted successfully! Our team will contact you shortly.');">
-                    <div class="form-group">
-                        <label for="companyName">Company Name</label>
-                        <input type="text" id="companyName" class="form-control" placeholder="Acme Corp" required>
-                    </div>
-                    
-                    <div class="grid-forms">
-                        <div class="form-group">
-                            <label for="location">Location</label>
-                            <input type="text" id="location" class="form-control" placeholder="City, Country" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="duration">Duration</label>
-                            <select id="duration" class="form-control" required>
-                                <option value="" disabled selected>Select duration...</option>
-                                <option value="short">Short-term (1-4 weeks)</option>
-                                <option value="long">Long-term (1+ months)</option>
-                                <option value="contract">Project Contract</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="grid-forms">
-                        <div class="form-group">
-                            <label for="numEngineers">Number of Engineers</label>
-                            <input type="number" id="numEngineers" class="form-control" min="1" placeholder="1" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="requiredSkills">Required Skills</label>
-                            <input type="text" id="requiredSkills" class="form-control" placeholder="e.g. Cisco CCNA, Windows Server" required>
-                        </div>
-                    </div>
-
-                    <div class="form-group" style="margin-top: 1rem;">
-                        <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.1rem; padding: 1rem;">Submit Requirement</button>
-                    </div>
-                </form>
+        <!-- Form -->
+        <div class="hire-form-box">
+          <h3 style="color:var(--accent);font-family:var(--font-mono);margin-bottom:2rem;">// Submit Requirement</h3>
+          <form onsubmit="event.preventDefault(); alert('Your requirement has been submitted. We will contact you within 2 business hours.');">
+            <div class="form-group"><label for="companyName">Company Name *</label><input type="text" id="companyName" class="form-control" placeholder="Acme Corporation" required></div>
+            <div class="form-group"><label for="contactName">Contact Name *</label><input type="text" id="contactName" class="form-control" placeholder="Jane Doe" required></div>
+            <div class="form-group"><label for="contactEmail">Business Email *</label><input type="email" id="contactEmail" class="form-control" placeholder="jane@acme.com" required></div>
+            <div class="grid-2">
+              <div class="form-group"><label for="location">Location / City *</label><input type="text" id="location" class="form-control" placeholder="London, UK" required></div>
+              <div class="form-group"><label for="numEngineers">No. of Engineers *</label><input type="number" id="numEngineers" class="form-control" min="1" placeholder="1" required></div>
             </div>
+            <div class="form-group"><label for="requiredSkills">Required Skills / Certifications *</label><input type="text" id="requiredSkills" class="form-control" placeholder="e.g. CCNA, Windows Server 2022, Smart Hands" required></div>
+            <div class="grid-2">
+              <div class="form-group">
+                <label for="duration">Duration *</label>
+                <select id="duration" class="form-control" required>
+                  <option value="" disabled selected>Select...</option>
+                  <option>1–2 Days (Emergency)</option>
+                  <option>1–4 Weeks (Short-term)</option>
+                  <option>1–3 Months</option>
+                  <option>3–6 Months</option>
+                  <option>6–12 Months</option>
+                  <option>12+ Months (Long-term)</option>
+                  <option>Project-Based (Scoped)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="engType">Engagement Type *</label>
+                <select id="engType" class="form-control" required>
+                  <option value="" disabled selected>Select...</option>
+                  <option>On-Site</option>
+                  <option>Remote</option>
+                  <option>Hybrid</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group"><label for="addInfo">Additional Information</label><textarea id="addInfo" class="form-control" rows="3" placeholder="Shift patterns, security clearance requirements, specific tools..."></textarea></div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1rem;padding:1rem;"><i class="fas fa-bolt"></i> Submit Requirement</button>
+          </form>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <div id="footer-placeholder"></div>
-
-    <script src="js/components.js"></script>
-    <script src="js/main.js"></script>
+  <div id="footer-placeholder"></div>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

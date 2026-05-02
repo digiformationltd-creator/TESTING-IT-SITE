@@ -1,127 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | Expert Utility Management Ltd</title>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <style>
-        .page-hero {
-            padding: 150px 0 80px;
-            background: linear-gradient(rgba(10, 25, 47, 0.95), rgba(2, 12, 27, 0.9)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=80') center/cover;
-            text-align: center;
-        }
-
-        .services-detail-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .service-type-box {
-            background: rgba(100, 255, 218, 0.05);
-            border: 1px solid rgba(100, 255, 218, 0.2);
-            padding: 2rem;
-            border-radius: 8px;
-            text-align: center;
-        }
-
-        .service-type-box i {
-            font-size: 2.5rem;
-            color: var(--white);
-            margin-bottom: 1rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Staffing Services | Experts Support Service Ltd</title>
+  <meta name="description" content="Experts Support Service Ltd offers on-site and remote IT staffing including IT Support, Network Engineering, Deskside Support, and Data Centre Operations.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .services-detail-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.5rem; margin-top:2.5rem; }
+    .delivery-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-top:2.5rem; }
+    .delivery-card { border-bottom:3px solid; padding:2rem; border-radius:8px; background:var(--card-bg); border-top:1px solid var(--border-glow); border-left:1px solid var(--border-glow); border-right:1px solid var(--border-glow); }
+    @media(max-width:768px){ .delivery-grid { grid-template-columns:1fr; } }
+  </style>
 </head>
 <body>
+  <div id="header-placeholder"></div>
 
-    <div id="header-placeholder"></div>
+  <section class="page-hero">
+    <div class="container fade-in">
+      <span class="section-tag">// Services</span>
+      <h1>End-to-End IT <span class="gradient-text">Staffing Solutions</span></h1>
+      <p style="max-width:600px;margin:1rem auto 0;">Precision-matched engineers. Flexible engagement models. Rapid deployment.</p>
+    </div>
+  </section>
 
-    <section class="page-hero">
-        <div class="container fade-in">
-            <h1>Our Services</h1>
-            <p>Comprehensive IT Staffing & Deployment Solutions</p>
+  <!-- Staffing Model -->
+  <section class="section" style="background:var(--primary-light); border-bottom:1px solid var(--border-glow);">
+    <div class="container" style="text-align:center;">
+      <span class="section-tag fade-in">// Engagement Models</span>
+      <h2 class="fade-in">How We Deliver <span class="gradient-text">IT Talent</span></h2>
+      <div class="services-detail-grid fade-in">
+        <div class="card" style="text-align:center;">
+          <i class="fas fa-users-cog" style="font-size:2.5rem;color:var(--accent);margin-bottom:1rem;text-shadow:0 0 12px rgba(0,240,255,0.4);"></i>
+          <h3>On-Site Deployment</h3>
+          <p>Engineers physically working at your offices, data centres, or client locations. Full presence, full accountability. Ideal for complex rollouts, break/fix, and deskside coverage.</p>
         </div>
-    </section>
-
-    <!-- IT Staffing Services Overview -->
-    <section class="section" style="background: var(--primary-light);">
-        <div class="container text-center" style="text-align: center;">
-            <h2 class="fade-in">IT Staffing Services</h2>
-            <div class="services-detail-grid fade-in">
-                <div class="service-type-box">
-                    <i class="fas fa-users-cog"></i>
-                    <h3>On-site IT Engineers</h3>
-                    <p>Physical deployment of technical talent directly to your offices or data centers.</p>
-                </div>
-                <div class="service-type-box">
-                    <i class="fas fa-laptop-house"></i>
-                    <h3>Remote IT Support</h3>
-                    <p>Dedicated off-site professionals handling helpdesk, network ops, and software dev.</p>
-                </div>
-                <div class="service-type-box">
-                    <i class="fas fa-project-diagram"></i>
-                    <h3>Project-based Engineers</h3>
-                    <p>Agile engineering teams deployed specifically to complete finite infrastructure projects.</p>
-                </div>
-            </div>
+        <div class="card" style="text-align:center;">
+          <i class="fas fa-laptop-house" style="font-size:2.5rem;color:var(--accent);margin-bottom:1rem;text-shadow:0 0 12px rgba(0,240,255,0.4);"></i>
+          <h3>Remote IT Support</h3>
+          <p>Dedicated off-site engineers integrated into your service desk, NOC, or SOC. Covering helpdesk ticketing, remote diagnostics, and hands-off infrastructure management.</p>
         </div>
-    </section>
-
-    <!-- Detailed Support Areas -->
-    <section class="section">
-        <div class="container">
-            <h2 class="fade-in" style="text-align: center; display: block; margin-bottom: 3rem;">Support Areas</h2>
-            
-            <div class="services-detail-grid">
-                <div class="card fade-in" id="support">
-                    <h3 style="color: var(--accent);"><i class="fas fa-headset"></i> IT Support</h3>
-                    <p>First and second line support to resolve ticketing queue bottlenecks. Hardware rollouts, software provisioning, and end-user assistance.</p>
-                </div>
-                <div class="card fade-in" id="network">
-                    <h3 style="color: var(--accent);"><i class="fas fa-network-wired"></i> Network Support</h3>
-                    <p>Installation and configuration of switches, routers, and firewalls. Advanced diagnostic troubleshooting and network security monitoring.</p>
-                </div>
-                <div class="card fade-in" id="deskside">
-                    <h3 style="color: var(--accent);"><i class="fas fa-desktop"></i> Deskside Support</h3>
-                    <p>In-person resolution of complex hardware/software issues. IMAC (Installs, Moves, Adds, Changes) execution and VIP executive support.</p>
-                </div>
-                <div class="card fade-in" id="datacenter">
-                    <h3 style="color: var(--accent);"><i class="fas fa-server"></i> Data Center Support</h3>
-                    <p>Racking and stacking servers, structured cabling (copper and fiber), and remote hands assistance for off-site administrators.</p>
-                </div>
-            </div>
+        <div class="card" style="text-align:center;">
+          <i class="fas fa-project-diagram" style="font-size:2.5rem;color:var(--accent);margin-bottom:1rem;text-shadow:0 0 12px rgba(0,240,255,0.4);"></i>
+          <h3>Project-Based Contracts</h3>
+          <p>Milestone-driven engagements for infrastructure upgrades, network refreshes, data centre migrations, or hardware rollouts. Fixed scope, clear deliverables.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Hiring Types -->
-    <section class="section" style="background: var(--bg); border-top: 1px solid var(--secondary);">
-        <div class="container" style="text-align: center;">
-            <h2 class="fade-in">Hiring Types</h2>
-            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 3rem; margin-bottom: 3rem;">
-                <div class="card fade-in" style="width: 250px; border-bottom: 3px solid var(--accent);">
-                    <h3>Short-term</h3>
-                    <p>Perfect for gap coverage, holiday fill-ins, and emergency out-of-hours needs.</p>
-                </div>
-                <div class="card fade-in" style="width: 250px; border-bottom: 3px solid var(--whatsapp);">
-                    <h3>Long-term</h3>
-                    <p>Embedded engineers working consistently within your operational matrix.</p>
-                </div>
-                <div class="card fade-in" style="width: 250px; border-bottom: 3px solid var(--white);">
-                    <h3>Contract-based</h3>
-                    <p>Fixed-term milestones to ensure successful implementation of discrete systems.</p>
-                </div>
-            </div>
-            <a href="hire.html" class="btn btn-primary fade-in">Hire For Your Need</a>
+  <!-- Support Areas -->
+  <section class="section">
+    <div class="container">
+      <span class="section-tag fade-in">// Disciplines</span>
+      <h2 class="fade-in">Technical Support Areas</h2>
+      <div class="services-detail-grid fade-in">
+        <div class="card" id="support">
+          <h3 style="color:var(--accent);display:flex;align-items:center;gap:0.75rem;"><i class="fas fa-headset"></i> IT Support & Helpdesk</h3>
+          <p style="margin-top:1rem;">We source 1st, 2nd, and 3rd-line support engineers for ITSM environments including ServiceNow, Jira, Zendesk, and Remedy. Our engineers handle incident management, asset provisioning, software deployment, and SLA compliance. Available for both permanent desk placement and overflow coverage.</p>
+          <ul style="list-style:none; margin-top:1rem; display:grid; gap:0.4rem;">
+            <li style="color:var(--text-muted);font-size:0.9rem;"><i class="fas fa-check" style="color:var(--green);margin-right:8px;"></i>1st/2nd/3rd Line Support</li>
+            <li style="color:var(--text-muted);font-size:0.9rem;"><i class="fas fa-check" style="color:var(--green);margin-right:8px;"></i>ServiceNow / Jira / Remedy</li>
+            <li style="color:var(--text-muted);font-size:0.9rem;"><i class="fas fa-check" style="color:var(--green);margin-right:8px;"></i>Windows, macOS, Linux environments</li>
+          </ul>
         </div>
-    </section>
+        <div class="card" id="network">
+          <h3 style="color:var(--accent);display:flex;align-items:center;gap:0.75rem;"><i class="fas fa-network-wired"></i> Network Engineering</h3>
+          <p style="margin-top:1rem;">Network and infrastructure engineers covering switching, routing, firewall management, and SD-WAN. Our engineers hold certifications from Cisco (CCNA–CCIE), Juniper (JNCP), Palo Alto, Fortinet, and Aruba. Suitable for enterprise refreshes, MPLS migrations, and NOC monitoring roles.</p>
+          <ul style="list-style:none; margin-top:1rem; display:grid; gap:0.4rem;">
+            <li style="color:var(--text-muted);font-size:0.9rem;"><i class="fas fa-check" style="color:var(--green);margin-right:8px;"></i>Cisco, Juniper, Palo Alto, Fortinet</li>
+            <li style="color:var(--text-muted);font-size:0.9rem;"><i class="fas fa-check" style="color:var(--green);margin-right:8px;"></i>LAN/WAN, SD-WAN, MPLS</li>
+            <li style="color:var(--text-muted);font-size:0.9rem;"><i class="fas fa-check" style="color:var(--green);margin-right:8px;"></i>NOC & Network Monitoring</li>
+          </ul>
+        </div>
+        <div class="card" id="deskside">
+          <h3 style="color:var(--accent);display:flex;align-items:center;gap:0.75rem;"><i class="fas fa-desktop"></i> Deskside & Field Support</h3>
+          <p style="margin-top:1rem;">Experienced IMAC (Install, Move, Add, Change) engineers and VIP support technicians deployed directly to end-user environments. Our field engineers handle hardware refreshes, device migrations, imaging, Active Directory management, and executive tech support across corporate campuses.</p>
+          <ul style="list-style:none; margin-top:1rem; display:grid; gap:0.4rem;">
+            <li style="color:var(--text-muted);font-size:0.9rem;"><i class="fas fa-check" style="color:var(--green);margin-right:8px;"></i>IMAC & Break/Fix</li>
+            <li style="color:var(--text-muted);font-size:0.9rem;"><i class="fas fa-check" style="color:var(--green);margin-right:8px;"></i>VIP & Executive Support</li>
+            <li style="color:var(--text-muted);font-size:0.9rem;"><i class="fas fa-check" style="color:var(--green);margin-right:8px;"></i>Hardware Rollouts & Refresh</li>
+          </ul>
+        </div>
+        <div class="card" id="datacenter">
+          <h3 style="color:var(--accent);display:flex;align-items:center;gap:0.75rem;"><i class="fas fa-server"></i> Data Centre Operations</h3>
+          <p style="margin-top:1rem;">Smart Hands and Remote Hands specialists for colocation and on-premise data centres. Our DC technicians perform rack-and-stack, structured cabling (copper & fibre to Cat6A, OM3/OM4), hardware installation and decommission, KVM/OOB management, and 24/7 NOC-to-floor liaison. Trained to BICSI and Tier-3 DC standards.</p>
+          <ul style="list-style:none; margin-top:1rem; display:grid; gap:0.4rem;">
+            <li style="color:var(--text-muted);font-size:0.9rem;"><i class="fas fa-check" style="color:var(--green);margin-right:8px;"></i>Smart Hands & Remote Hands</li>
+            <li style="color:var(--text-muted);font-size:0.9rem;"><i class="fas fa-check" style="color:var(--green);margin-right:8px;"></i>Rack/Stack, Cabling, KVM</li>
+            <li style="color:var(--text-muted);font-size:0.9rem;"><i class="fas fa-check" style="color:var(--green);margin-right:8px;"></i>24/7 DC Technician Placement</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <div id="footer-placeholder"></div>
+  <!-- Hiring Types -->
+  <section class="section" style="background:var(--primary-light); border-top:1px solid var(--border-glow);">
+    <div class="container" style="text-align:center;">
+      <span class="section-tag fade-in">// Engagement Duration</span>
+      <h2 class="fade-in">Flexible Hiring Models</h2>
+      <div class="delivery-grid fade-in">
+        <div class="delivery-card" style="border-bottom-color:var(--accent);">
+          <h3 style="color:var(--accent);">Short-Term</h3>
+          <p style="margin-top:1rem;">1 day to 8 weeks. Ideal for holiday cover, emergency skill gap, out-of-hours escalations, or burst capacity during project peaks.</p>
+        </div>
+        <div class="delivery-card" style="border-bottom-color:var(--accent2);">
+          <h3 style="color:var(--accent2);">Long-Term</h3>
+          <p style="margin-top:1rem;">3 to 12+ months. Embedded engineers working within your team structure as a functional, accountable part of your IT operation.</p>
+        </div>
+        <div class="delivery-card" style="border-bottom-color:var(--green);">
+          <h3 style="color:var(--green);">Contract / Project</h3>
+          <p style="margin-top:1rem;">Fixed scope and timeline. Suitable for infrastructure migrations, office buildouts, network refreshes, and DC commissioning.</p>
+        </div>
+      </div>
+      <a href="hire.html" class="btn btn-primary" style="margin-top:2.5rem;" class="fade-in"><i class="fas fa-bolt"></i> Submit a Requirement</a>
+    </div>
+  </section>
 
-    <script src="js/components.js"></script>
-    <script src="js/main.js"></script>
+  <div id="footer-placeholder"></div>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

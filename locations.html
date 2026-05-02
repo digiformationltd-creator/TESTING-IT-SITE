@@ -1,119 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Locations | Expert Utility Management Ltd</title>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <style>
-        .page-hero {
-            padding: 150px 0 80px;
-            background: var(--primary);
-            text-align: center;
-        }
-
-        .location-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .location-card {
-            background: var(--primary-light);
-            border-radius: 8px;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            transition: var(--transition);
-        }
-
-        .location-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 30px rgba(100, 255, 218, 0.1);
-        }
-
-        .location-img {
-            height: 180px;
-            background-color: var(--secondary);
-            background-size: cover;
-            background-position: center;
-        }
-
-        .location-body {
-            padding: 2rem;
-            text-align: center;
-            flex: 1;
-        }
-
-        .location-body h3 {
-            color: var(--accent);
-            margin-bottom: 1rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Engineer Locations | Experts Support Service Ltd</title>
+  <meta name="description" content="Experts Support Service Ltd deploys IT engineers across the United Kingdom, United States, France, and Austria.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .location-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:2rem; margin-top:3rem; }
+    .location-card { background:var(--card-bg); border:1px solid var(--border-glow); border-radius:8px; overflow:hidden; transition:var(--transition); }
+    .location-card:hover { transform:translateY(-8px); border-color:rgba(0,240,255,0.5); box-shadow:0 15px 40px rgba(0,240,255,0.1); }
+    .location-img { height:200px; background-size:cover; background-position:center; position:relative; }
+    .location-img::after { content:''; position:absolute; inset:0; background:linear-gradient(0deg, rgba(5,13,26,0.95) 0%, rgba(5,13,26,0.1) 100%); }
+    .location-flag { position:absolute; bottom:1rem; left:1.5rem; z-index:1; font-size:2rem; }
+    .location-body { padding:1.5rem 2rem 2rem; }
+    .location-body h3 { color:var(--accent); margin-bottom:0.5rem; }
+    .location-tag { display:inline-block; background:rgba(0,240,255,0.08); color:var(--text-muted); border:1px solid var(--border-glow); padding:0.2rem 0.6rem; border-radius:50px; font-size:0.75rem; margin:0.2rem; }
+  </style>
 </head>
 <body>
+  <div id="header-placeholder"></div>
 
-    <div id="header-placeholder"></div>
+  <section class="page-hero">
+    <div class="container fade-in">
+      <span class="section-tag">// Coverage</span>
+      <h1>Global <span class="gradient-text">Deployment Zones</span></h1>
+      <p style="max-width:560px;margin:1rem auto 0;">We maintain active engineering networks in four international markets, enabling rapid on-site and remote deployment.</p>
+    </div>
+  </section>
 
-    <section class="page-hero">
-        <div class="container fade-in">
-            <h1>Our Global Reach</h1>
-            <p>Rapid IT engineer deployment across key international tech hubs.</p>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container">
-            <div class="location-grid fade-in">
-                <!-- UK -->
-                <div class="location-card" id="uk">
-                    <div class="location-img" style="background-image: url('https://images.unsplash.com/photo-1513635269975-5969336cd100?auto=format&fit=crop&w=600&q=80')"></div>
-                    <div class="location-body">
-                        <h3>United Kingdom</h3>
-                        <p>Providing IT Engineers across London, Manchester, Birmingham, and broader UK regions for on-site support and data center operations.</p>
-                    </div>
-                </div>
-
-                <!-- USA -->
-                <div class="location-card" id="usa">
-                    <div class="location-img" style="background-image: url('https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=600&q=80')"></div>
-                    <div class="location-body">
-                        <h3>United States</h3>
-                        <p>Coast-to-coast coverage for short and long-term project resourcing from New York to Silicon Valley.</p>
-                    </div>
-                </div>
-
-                <!-- France -->
-                <div class="location-card" id="france">
-                    <div class="location-img" style="background-image: url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=600&q=80')"></div>
-                    <div class="location-body">
-                        <h3>France</h3>
-                        <p>Equipping businesses in Paris, Lyon, and beyond with fluent, experienced IT support and network specialists.</p>
-                    </div>
-                </div>
-
-                <!-- Austria -->
-                <div class="location-card" id="austria">
-                    <div class="location-img" style="background-image: url('https://images.unsplash.com/photo-1516550893923-42d28e5677af?auto=format&fit=crop&w=600&q=80')"></div>
-                    <div class="location-body">
-                        <h3>Austria</h3>
-                        <p>Reliable hardware, deskside, and software deployment teams serving Vienna and broader Austrian enterprises.</p>
-                    </div>
-                </div>
+  <section class="section">
+    <div class="container">
+      <div class="location-grid fade-in">
+        <div class="location-card" id="uk">
+          <div class="location-img" style="background-image:url('https://images.unsplash.com/photo-1513635269975-5969336cd100?auto=format&fit=crop&w=800&q=80');">
+            <span class="location-flag">🇬🇧</span>
+          </div>
+          <div class="location-body">
+            <h3>United Kingdom</h3>
+            <p>Our largest and primary market. We hold an active engineer pool across London, Manchester, Birmingham, Edinburgh, and Bristol. We supply IT support, network engineers, and DC technicians to enterprise, financial, and public sector clients across the UK.</p>
+            <div>
+              <span class="location-tag">London</span><span class="location-tag">Manchester</span>
+              <span class="location-tag">Birmingham</span><span class="location-tag">Edinburgh</span>
+              <span class="location-tag">Bristol</span><span class="location-tag">Leeds</span>
             </div>
-            
-            <div style="text-align: center; margin-top: 3rem;">
-                <a href="hire.html" class="btn btn-primary fade-in">Find Engineers In Your Area</a>
-            </div>
+            <a href="hire.html" class="btn btn-outline" style="margin-top:1.5rem; font-size:0.85rem;">Hire UK Engineers</a>
+          </div>
         </div>
-    </section>
 
-    <div id="footer-placeholder"></div>
+        <div class="location-card" id="usa">
+          <div class="location-img" style="background-image:url('https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=800&q=80');">
+            <span class="location-flag">🇺🇸</span>
+          </div>
+          <div class="location-body">
+            <h3>United States</h3>
+            <p>We provide on-site and remote IT engineers across key US tech hubs. Our US network covers East and West Coast metros, supporting Fortune 500 companies, data centre operators, and fast-growing technology firms requiring rapid-response IT talent.</p>
+            <div>
+              <span class="location-tag">New York</span><span class="location-tag">San Francisco</span>
+              <span class="location-tag">Chicago</span><span class="location-tag">Dallas</span>
+              <span class="location-tag">Washington DC</span>
+            </div>
+            <a href="hire.html" class="btn btn-outline" style="margin-top:1.5rem; font-size:0.85rem;">Hire US Engineers</a>
+          </div>
+        </div>
 
-    <script src="js/components.js"></script>
-    <script src="js/main.js"></script>
+        <div class="location-card" id="france">
+          <div class="location-img" style="background-image:url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80');">
+            <span class="location-flag">🇫🇷</span>
+          </div>
+          <div class="location-body">
+            <h3>France</h3>
+            <p>Supporting European multinationals and French enterprises with bilingual IT engineers. Our French network is concentrated in Paris and Lyon, with satellite coverage across Marseille and Toulouse. Engineers are proficient in both English and French-language client environments.</p>
+            <div>
+              <span class="location-tag">Paris</span><span class="location-tag">Lyon</span>
+              <span class="location-tag">Marseille</span><span class="location-tag">Toulouse</span>
+            </div>
+            <a href="hire.html" class="btn btn-outline" style="margin-top:1.5rem; font-size:0.85rem;">Hire FR Engineers</a>
+          </div>
+        </div>
+
+        <div class="location-card" id="austria">
+          <div class="location-img" style="background-image:url('https://images.unsplash.com/photo-1516550893923-42d28e5677af?auto=format&fit=crop&w=800&q=80');">
+            <span class="location-flag">🇦🇹</span>
+          </div>
+          <div class="location-body">
+            <h3>Austria</h3>
+            <p>ESS operates in Austria through a verified network of field engineers and DC specialists primarily based in Vienna and Graz. We support international firms with Austrian operations, DACH-region network projects, and data centre deployments requiring on-site technical resource.</p>
+            <div>
+              <span class="location-tag">Vienna</span><span class="location-tag">Graz</span>
+              <span class="location-tag">Linz</span>
+            </div>
+            <a href="hire.html" class="btn btn-outline" style="margin-top:1.5rem; font-size:0.85rem;">Hire AT Engineers</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

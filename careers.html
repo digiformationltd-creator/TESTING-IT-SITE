@@ -1,132 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Careers | Expert Utility Management Ltd</title>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <style>
-        .page-hero {
-            padding: 150px 0 80px;
-            background: linear-gradient(rgba(10, 25, 47, 0.9), rgba(2, 12, 27, 0.9)), url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1920&q=80') center/cover;
-            text-align: center;
-        }
-
-        .job-card {
-            background: var(--primary-light);
-            border-left: 4px solid var(--accent);
-            padding: 2rem;
-            margin-bottom: 1.5rem;
-            border-radius: 4px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: var(--transition);
-        }
-
-        .job-card:hover {
-            background: rgba(100, 255, 218, 0.05);
-            transform: translateX(10px);
-        }
-
-        .job-details h3 {
-            color: var(--white);
-            margin-bottom: 0.5rem;
-        }
-
-        .job-meta {
-            display: flex;
-            gap: 1.5rem;
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-        
-        .job-meta span i {
-            color: var(--accent);
-            margin-right: 5px;
-        }
-
-        @media (max-width: 768px) {
-            .job-card {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 1.5rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Careers | Experts Support Service Ltd</title>
+  <meta name="description" content="Careers at Experts Support Service Ltd. Explore internal roles and IT contract opportunities across the UK, USA, and Europe.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .job-card {
+      background:var(--card-bg); border:1px solid var(--border-glow); border-left:3px solid var(--accent);
+      padding:1.5rem 2rem; border-radius:4px; display:flex; justify-content:space-between; align-items:center;
+      transition:var(--transition); margin-bottom:1rem;
+    }
+    .job-card:hover { border-color:rgba(0,240,255,0.5); transform:translateX(6px); box-shadow:0 4px 20px rgba(0,240,255,0.08); }
+    .job-card.contract { border-left-color:var(--accent2); }
+    .job-meta { display:flex; gap:1.5rem; margin-top:0.4rem; flex-wrap:wrap; }
+    .job-meta span { font-size:0.82rem; color:var(--text-muted); font-family:var(--font-mono); }
+    .job-meta span i { color:var(--accent); margin-right:5px; }
+    .job-meta span.contract-tag i { color:var(--accent2); }
+    @media(max-width:768px){ .job-card { flex-direction:column; align-items:flex-start; gap:1.2rem; } }
+  </style>
 </head>
 <body>
+  <div id="header-placeholder"></div>
 
-    <div id="header-placeholder"></div>
+  <section class="page-hero">
+    <div class="container fade-in">
+      <span class="section-tag">// Careers</span>
+      <h1>Work With <span class="gradient-text">ESS</span></h1>
+      <p style="max-width:560px;margin:1rem auto 0;">Internal roles for staffing professionals and premium contract opportunities for IT engineers across 4 countries.</p>
+    </div>
+  </section>
 
-    <section class="page-hero">
-        <div class="container fade-in">
-            <h1>Expert Utility Careers</h1>
-            <p>Internal corporate roles, contract, and freelance opportunities.</p>
-        </div>
-    </section>
+  <section class="section">
+    <div class="container">
+      <span class="section-tag fade-in">// Internal Roles</span>
+      <h2 class="fade-in" style="margin-bottom:2rem;">Join the <span class="gradient-text">ESS Team</span></h2>
 
-    <section class="section">
-        <div class="container">
-            <h2 class="fade-in" style="margin-bottom: 2rem;">Internal Roles</h2>
-            <div class="fade-in">
-                <div class="job-card">
-                    <div class="job-details">
-                        <h3>IT Talent Acquisition Specialist</h3>
-                        <div class="job-meta">
-                            <span><i class="fas fa-map-marker-alt"></i> London, UK (Hybrid)</span>
-                            <span><i class="fas fa-briefcase"></i> Full-time</span>
-                        </div>
-                    </div>
-                    <a href="contact.html" class="btn btn-primary">Apply Now</a>
-                </div>
-
-                <div class="job-card">
-                    <div class="job-details">
-                        <h3>Client Relations Manager</h3>
-                        <div class="job-meta">
-                            <span><i class="fas fa-map-marker-alt"></i> New York, US (Remote)</span>
-                            <span><i class="fas fa-briefcase"></i> Full-time</span>
-                        </div>
-                    </div>
-                    <a href="contact.html" class="btn btn-primary">Apply Now</a>
-                </div>
+      <div class="fade-in">
+        <div class="job-card">
+          <div>
+            <h3>IT Talent Acquisition Specialist</h3>
+            <div class="job-meta">
+              <span><i class="fas fa-map-marker-alt"></i> London, UK (Hybrid)</span>
+              <span><i class="fas fa-briefcase"></i> Full-time, Permanent</span>
+              <span><i class="fas fa-gbp"></i> £30,000 – £40,000 + commission</span>
             </div>
-
-            <h2 class="fade-in" style="margin-top: 4rem; margin-bottom: 2rem;">Project & Contract Roles</h2>
-            <p class="fade-in" style="margin-bottom: 2rem;">We are continuously accepting applications for our engineering network. Submit your profile to get matched with active client needs.</p>
-            <div class="fade-in">
-                <div class="job-card" style="border-left-color: var(--white);">
-                    <div class="job-details">
-                        <h3 style="color: var(--white);">Data Center Smart Hands Engineer</h3>
-                        <div class="job-meta">
-                            <span><i class="fas fa-map-marker-alt" style="color: var(--white);"></i> Paris, France</span>
-                            <span><i class="fas fa-file-contract" style="color: var(--white);"></i> Contract (6 Months)</span>
-                        </div>
-                    </div>
-                    <a href="join.html" class="btn btn-outline" style="border-color: var(--white); color: var(--white);">Join Network</a>
-                </div>
-
-                <div class="job-card" style="border-left-color: var(--white);">
-                    <div class="job-details">
-                        <h3 style="color: var(--white);">L2 Network Engineer</h3>
-                        <div class="job-meta">
-                            <span><i class="fas fa-map-marker-alt" style="color: var(--white);"></i> Vienna, Austria</span>
-                            <span><i class="fas fa-file-contract" style="color: var(--white);"></i> Contract (3 Months)</span>
-                        </div>
-                    </div>
-                    <a href="join.html" class="btn btn-outline" style="border-color: var(--white); color: var(--white);">Join Network</a>
-                </div>
-            </div>
-            
+          </div>
+          <a href="contact.html" class="btn btn-primary" style="white-space:nowrap; flex-shrink:0;">Apply Now</a>
         </div>
-    </section>
 
-    <div id="footer-placeholder"></div>
+        <div class="job-card">
+          <div>
+            <h3>Client Relationship Manager — EMEA</h3>
+            <div class="job-meta">
+              <span><i class="fas fa-map-marker-alt"></i> London, UK / Remote</span>
+              <span><i class="fas fa-briefcase"></i> Full-time, Permanent</span>
+              <span><i class="fas fa-gbp"></i> £40,000 – £55,000 + OTE</span>
+            </div>
+          </div>
+          <a href="contact.html" class="btn btn-primary" style="white-space:nowrap; flex-shrink:0;">Apply Now</a>
+        </div>
 
-    <script src="js/components.js"></script>
-    <script src="js/main.js"></script>
+        <div class="job-card">
+          <div>
+            <h3>Operations Coordinator</h3>
+            <div class="job-meta">
+              <span><i class="fas fa-map-marker-alt"></i> London, UK</span>
+              <span><i class="fas fa-briefcase"></i> Full-time, Permanent</span>
+              <span><i class="fas fa-gbp"></i> £25,000 – £32,000</span>
+            </div>
+          </div>
+          <a href="contact.html" class="btn btn-primary" style="white-space:nowrap; flex-shrink:0;">Apply Now</a>
+        </div>
+      </div>
+
+      <span class="section-tag fade-in" style="margin-top:4rem; display:block;">// Contract & Freelance</span>
+      <h2 class="fade-in" style="margin-bottom:0.5rem;">Active <span class="gradient-text">Engineer Contracts</span></h2>
+      <p class="fade-in" style="margin-bottom:2rem;">We are continuously placing engineers into these rolling demand areas. Submit your profile to be matched.</p>
+
+      <div class="fade-in">
+        <div class="job-card contract">
+          <div>
+            <h3>Data Centre Smart Hands Technician</h3>
+            <div class="job-meta">
+              <span><i class="fas fa-map-marker-alt"></i> Paris, France</span>
+              <span class="contract-tag"><i class="fas fa-file-contract"></i> Contract — 6 Months</span>
+              <span><i class="fas fa-star"></i> Inside IR35 / PAYE</span>
+            </div>
+          </div>
+          <a href="join.html" class="btn btn-outline" style="border-color:var(--accent2);color:var(--accent2);white-space:nowrap;flex-shrink:0;">Apply</a>
+        </div>
+
+        <div class="job-card contract">
+          <div>
+            <h3>L2 Network Engineer (Cisco / Juniper)</h3>
+            <div class="job-meta">
+              <span><i class="fas fa-map-marker-alt"></i> Vienna, Austria</span>
+              <span class="contract-tag"><i class="fas fa-file-contract"></i> Contract — 3 Months</span>
+              <span><i class="fas fa-star"></i> Outside IR35</span>
+            </div>
+          </div>
+          <a href="join.html" class="btn btn-outline" style="border-color:var(--accent2);color:var(--accent2);white-space:nowrap;flex-shrink:0;">Apply</a>
+        </div>
+
+        <div class="job-card contract">
+          <div>
+            <h3>Deskside Support Engineer (VIP)</h3>
+            <div class="job-meta">
+              <span><i class="fas fa-map-marker-alt"></i> London, UK (City)</span>
+              <span class="contract-tag"><i class="fas fa-file-contract"></i> Contract — Rolling</span>
+              <span><i class="fas fa-star"></i> Inside IR35 / Umbrella</span>
+            </div>
+          </div>
+          <a href="join.html" class="btn btn-outline" style="border-color:var(--accent2);color:var(--accent2);white-space:nowrap;flex-shrink:0;">Apply</a>
+        </div>
+
+        <div class="job-card contract">
+          <div>
+            <h3>2nd Line IT Support — Financial Services</h3>
+            <div class="job-meta">
+              <span><i class="fas fa-map-marker-alt"></i> New York, USA</span>
+              <span class="contract-tag"><i class="fas fa-file-contract"></i> Contract — 6–12 Months</span>
+              <span><i class="fas fa-star"></i> W2 / C2C</span>
+            </div>
+          </div>
+          <a href="join.html" class="btn btn-outline" style="border-color:var(--accent2);color:var(--accent2);white-space:nowrap;flex-shrink:0;">Apply</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

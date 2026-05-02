@@ -1,138 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog & Insights | Expert Utility Management Ltd</title>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <style>
-        .page-hero {
-            padding: 150px 0 80px;
-            background: linear-gradient(rgba(10, 25, 47, 0.9), rgba(2, 12, 27, 0.95)), url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80') center/cover;
-            text-align: center;
-        }
-
-        .blog-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .blog-card {
-            background: var(--primary-light);
-            border-radius: 8px;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            transition: var(--transition);
-            border: 1px solid rgba(255,255,255,0.05);
-        }
-
-        .blog-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--accent);
-        }
-
-        .blog-img {
-            height: 200px;
-            background-color: var(--secondary);
-            background-size: cover;
-            background-position: center;
-        }
-
-        .blog-content {
-            padding: 2rem;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .blog-meta {
-            color: var(--accent);
-            font-size: 0.85rem;
-            margin-bottom: 1rem;
-            font-weight: 600;
-        }
-
-        .blog-content h3 {
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
-        }
-
-        .blog-content p {
-            flex: 1;
-            font-size: 0.95rem;
-        }
-
-        .read-more {
-            margin-top: 1rem;
-            color: var(--white);
-            font-weight: 600;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .read-more:hover {
-            color: var(--accent);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Staffing Insights | Experts Support Service Ltd Blog</title>
+  <meta name="description" content="Insights on IT staffing, talent shortages, data centre trends, and workforce planning from Experts Support Service Ltd.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .blog-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:2rem; margin-top:2.5rem; }
+    .blog-card { background:var(--card-bg); border:1px solid var(--border-glow); border-radius:8px; overflow:hidden; transition:var(--transition); display:flex; flex-direction:column; }
+    .blog-card:hover { transform:translateY(-6px); border-color:rgba(0,240,255,0.5); box-shadow:0 15px 40px rgba(0,240,255,0.08); }
+    .blog-img { height:210px; background-size:cover; background-position:center; }
+    .blog-content { padding:1.5rem 2rem 2rem; flex:1; display:flex; flex-direction:column; }
+    .blog-category { font-family:var(--font-mono); font-size:0.75rem; color:var(--accent); letter-spacing:2px; text-transform:uppercase; margin-bottom:0.75rem; }
+    .blog-content h3 { font-size:1.2rem; margin-bottom:0.75rem; }
+    .blog-content p { flex:1; font-size:0.92rem; }
+    .read-more { margin-top:1.2rem; color:var(--accent); font-weight:600; font-size:0.88rem; display:inline-flex; align-items:center; gap:0.4rem; transition:var(--transition); }
+    .read-more:hover { color:var(--white); gap:0.8rem; }
+    .blog-meta-info { display:flex; gap:1rem; color:var(--text-muted); font-size:0.78rem; margin-bottom:0.75rem; flex-wrap:wrap; }
+  </style>
 </head>
 <body>
+  <div id="header-placeholder"></div>
 
-    <div id="header-placeholder"></div>
+  <section class="page-hero">
+    <div class="container fade-in">
+      <span class="section-tag">// Insights</span>
+      <h1>IT Workforce <span class="gradient-text">Intelligence</span></h1>
+      <p style="max-width:560px;margin:1rem auto 0;">Hiring trends, tech sector insights, and practical advice for businesses and IT professionals.</p>
+    </div>
+  </section>
 
-    <section class="page-hero">
-        <div class="container fade-in">
-            <h1>Insights & Updates</h1>
-            <p>Industry trends, IT hiring insights, and company news.</p>
-        </div>
-    </section>
+  <section class="section">
+    <div class="container">
+      <div class="blog-grid fade-in">
+        <article class="blog-card">
+          <div class="blog-img" style="background-image:url('https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="blog-content">
+            <div class="blog-category">// Hiring Insights</div>
+            <div class="blog-meta-info"><span><i class="fas fa-calendar-alt"></i> April 2025</span><span><i class="fas fa-clock"></i> 5 min read</span></div>
+            <h3>Navigating the Global IT Talent Shortage in 2025</h3>
+            <p>The global IT talent shortage has reached critical levels with an estimated 3.4 million unfilled cybersecurity, networking, and infrastructure positions. We explore why on-demand staffing agencies are becoming the go-to contingency for enterprise IT teams.</p>
+            <a href="#" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
 
-    <section class="section">
-        <div class="container">
-            <div class="blog-grid fade-in">
-                
-                <article class="blog-card">
-                    <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=600&q=80')"></div>
-                    <div class="blog-content">
-                        <div class="blog-meta">IT HIRING INSIGHTS • OCT 12</div>
-                        <h3>Navigating the Global Tech Talent Shortage</h3>
-                        <p>How businesses can leverage contract-based IT engineers to overcome immediate skill gaps and maintain operational continuity.</p>
-                        <a href="#" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
+        <article class="blog-card">
+          <div class="blog-img" style="background-image:url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="blog-content">
+            <div class="blog-category">// Data Centre</div>
+            <div class="blog-meta-info"><span><i class="fas fa-calendar-alt"></i> March 2025</span><span><i class="fas fa-clock"></i> 7 min read</span></div>
+            <h3>Smart Hands vs. Remote Hands: What Your DC Actually Needs</h3>
+            <p>As cloud infrastructure scales globally, the distinction between Smart Hands and Remote Hands is more important than ever. We break down the two models, their cost implications, and when to use each for your colocation facility.</p>
+            <a href="#" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
 
-                <article class="blog-card">
-                    <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=600&q=80')"></div>
-                    <div class="blog-content">
-                        <div class="blog-meta">INDUSTRY UPDATES • SEP 28</div>
-                        <h3>The Rise of Data Center Smart Hands</h3>
-                        <p>Exploring the growing demand for remote physical support in hybrid cloud environments across Europe.</p>
-                        <a href="#" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
+        <article class="blog-card">
+          <div class="blog-img" style="background-image:url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="blog-content">
+            <div class="blog-category">// Workforce Trends</div>
+            <div class="blog-meta-info"><span><i class="fas fa-calendar-alt"></i> March 2025</span><span><i class="fas fa-clock"></i> 6 min read</span></div>
+            <h3>The Rise of the Flexible IT Engineer: Why Contract Work Is Booming</h3>
+            <p>More experienced IT professionals are choosing contract over permanent employment. Higher day rates, geographic flexibility, and project variety are reshaping the engineering workforce. Here is what that means for businesses planning headcount in 2025.</p>
+            <a href="#" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
 
-                <article class="blog-card">
-                    <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80')"></div>
-                    <div class="blog-content">
-                        <div class="blog-meta">WORKFORCE TRENDS • SEP 15</div>
-                        <h3>Flexible Deskside Support Delivery</h3>
-                        <p>Why modern enterprises are shifting away from massive permanent overheads toward elastic on-site engineering solutions.</p>
-                        <a href="#" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
+        <article class="blog-card">
+          <div class="blog-img" style="background-image:url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="blog-content">
+            <div class="blog-category">// Engineering Tips</div>
+            <div class="blog-meta-info"><span><i class="fas fa-calendar-alt"></i> February 2025</span><span><i class="fas fa-clock"></i> 4 min read</span></div>
+            <h3>5 Certifications That Will Land You Higher Rates in 2025</h3>
+            <p>From CCIE Enterprise to AWS Solutions Architect and Palo Alto PCNSE — we identify the five most in-demand certifications our clients specifically request, and how to use them to negotiate better contract terms.</p>
+            <a href="#" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
 
-            </div>
-        </div>
-    </section>
+        <article class="blog-card">
+          <div class="blog-img" style="background-image:url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="blog-content">
+            <div class="blog-category">// Industry Updates</div>
+            <div class="blog-meta-info"><span><i class="fas fa-calendar-alt"></i> January 2025</span><span><i class="fas fa-clock"></i> 5 min read</span></div>
+            <h3>DACH Region IT Market Outlook: Opportunities in Austria & Germany</h3>
+            <p>The DACH region is seeing accelerated IT investment in manufacturing, automotive, and logistics sectors. We outline the skill sets in highest demand and how businesses can source talent faster without a local HR presence.</p>
+            <a href="#" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
 
-    <div id="footer-placeholder"></div>
+        <article class="blog-card">
+          <div class="blog-img" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="blog-content">
+            <div class="blog-category">// Client Guide</div>
+            <div class="blog-meta-info"><span><i class="fas fa-calendar-alt"></i> November 2024</span><span><i class="fas fa-clock"></i> 6 min read</span></div>
+            <h3>How to Write the Perfect IT Engineering Brief</h3>
+            <p>Vague job briefs lead to poor matches, wasted time, and costly delays. We share the exact template we use internally to define IT requirements in a way that guarantees the right engineer is found first time.</p>
+            <a href="#" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
-    <script src="js/components.js"></script>
-    <script src="js/main.js"></script>
+  <div id="footer-placeholder"></div>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
